@@ -23,7 +23,7 @@ public class MotorBikeService {
 		return motorBike.getModel() + " successfully inserted ";
 	}
 
-	public MotorBike getMotorBikeById(long motorBikeId) {
+	public MotorBike getMotorBikeById(int motorBikeId) {
 		Object obj = motorBikeRepo.findById(motorBikeId);
 		return (MotorBike) obj;
 	}

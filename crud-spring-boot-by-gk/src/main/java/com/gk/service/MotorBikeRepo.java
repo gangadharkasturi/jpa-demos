@@ -9,6 +9,6 @@ import com.gk.entity.MotorBike;
  *
  */
 @Repository
-public interface MotorBikeRepo extends JpaRepository<MotorBike, Long> {
+public interface MotorBikeRepo extends JpaRepository<MotorBike, Integer> {
 
 }

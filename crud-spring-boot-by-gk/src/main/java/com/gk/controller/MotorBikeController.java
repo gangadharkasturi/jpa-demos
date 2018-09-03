@@ -17,11 +17,11 @@ import com.gk.service.MotorBikeService;
  */
 @RestController
 public class MotorBikeController {
-	//@Autowired
-	public MotorBikeService motorBikeService = new MotorBikeService();;
+	@Autowired
+	public MotorBikeService motorBikeService;
 
 	@GetMapping(value = "/findMotorBikeById/{id}")
-	public MotorBike findMotorBikeById(@PathVariable long bikeId) {
+	public MotorBike findMotorBikeById(@PathVariable int bikeId) {
 		MotorBike motorBike = motorBikeService.getMotorBikeById(bikeId);
 		return motorBike;
 	}
